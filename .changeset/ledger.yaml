@@ -5,6 +5,7 @@
 '@zxiaosi-micro/create-sdk@0.1.2':
   dir: packages/create-sdk
   intents:
+    - afraid-monkeys-sneeze
     - long-heads-raise
 '@zxiaosi-micro/sdk@0.1.1':
   dir: packages/sdk
@@ -13,4 +14,5 @@
 '@zxiaosi-micro/sdk@0.1.2':
   dir: packages/sdk
   intents:
+    - afraid-monkeys-sneeze
     - long-heads-raise
