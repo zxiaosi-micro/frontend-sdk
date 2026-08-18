@@ -9,7 +9,7 @@
     "typecheck": "pnpm -r --if-present run typecheck",
     "change": "pnpm change",
     "change:status": "pnpm change status",
-    "version:packages": "pnpm version -r"
+    "version:packages": "pnpm version -r --no-git-checks"
   },
   "devDependencies": {
     "lint-staged": "^17.3.0",
