@@ -1,0 +1,39 @@
+{
+  "name": "@zxiaosi-micro/create-sdk",
+  "version": "0.0.0",
+  "description": "A tool for generating @zxiaosi-micro/sdk projects",
+  "license": "MIT",
+  "author": "zxiaosi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zxiaosi-micro/frontend-sdk.git",
+    "directory": "packages/create-sdk"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "release": "bumpp",
+    "prepublishOnly": "pnpm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "bumpp": "^11.1.0",
+    "tsdown": "^0.22.5",
+    "typescript": "~6.0.2",
+    "vitest": "^4.1.10"
+  }
+}
