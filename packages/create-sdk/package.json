@@ -1,6 +1,6 @@
 {
   "name": "@zxiaosi-micro/create-sdk",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A tool for generating @zxiaosi-micro/sdk projects",
   "license": "MIT",
   "author": "zxiaosi",
