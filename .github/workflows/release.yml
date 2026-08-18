@@ -73,12 +73,12 @@ jobs:
 
             else
 
-              echo "Publishing ${PACKAGE}@${VERSION}"
+              echo "Publishing ${PACKAGE}@${VERSION} with tag ${NPM_TAG}"
 
-              npm publish \
-                --workspace="${PACKAGE_DIR}" \
-                --access public \
-                --tag "${NPM_TAG}"
+              (
+                cd "${PACKAGE_DIR}"
+                npm publish --tag "${NPM_TAG}"
+              )
 
             fi
           done
