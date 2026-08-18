@@ -12,6 +12,8 @@
     "version:packages": "pnpm version -r --no-git-checks"
   },
   "devDependencies": {
+    "bumpp": "^12.2.1",
+    "changelogithub": "^15.0.4",
     "lint-staged": "^17.3.0",
     "oxfmt": "^0.63.0",
     "oxlint": "^1.78.0",
