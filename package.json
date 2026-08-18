@@ -3,7 +3,13 @@
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "postinstall": "simple-git-hooks"
+    "postinstall": "simple-git-hooks",
+    "build": "pnpm -r --if-present run build",
+    "test": "pnpm -r --if-present run test",
+    "typecheck": "pnpm -r --if-present run typecheck",
+    "change": "pnpm change",
+    "change:status": "pnpm change status",
+    "version:packages": "pnpm version -r"
   },
   "devDependencies": {
     "lint-staged": "^17.3.0",
