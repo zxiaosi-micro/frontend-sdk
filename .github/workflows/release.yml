@@ -41,11 +41,12 @@ jobs:
       # Create Release Notes Based on GitHub PRs / Commits
       - name: Generate GitHub Release
         run: pnpx changelogithub
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # Publish
-      - name: Publish packages
+      - name: Publish to NPM
         run: |
           VERSION="${GITHUB_REF_NAME#v}"
 
