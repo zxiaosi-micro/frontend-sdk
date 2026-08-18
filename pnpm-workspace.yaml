@@ -4,7 +4,3 @@ packages:
 
 allowBuilds:
   simple-git-hooks: false
-
-versioning:
-  changelog:
-    storage: repository

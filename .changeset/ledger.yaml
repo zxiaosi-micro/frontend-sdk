@@ -2,7 +2,15 @@
   dir: packages/create-sdk
   intents:
     - real-banks-write
+'@zxiaosi-micro/create-sdk@0.1.2':
+  dir: packages/create-sdk
+  intents:
+    - long-heads-raise
 '@zxiaosi-micro/sdk@0.1.1':
   dir: packages/sdk
   intents:
     - real-banks-write
+'@zxiaosi-micro/sdk@0.1.2':
+  dir: packages/sdk
+  intents:
+    - long-heads-raise
